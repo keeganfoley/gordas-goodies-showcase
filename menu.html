@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu — Gorda's Goodies</title>
+    <meta
+      name="description"
+      content="See what Gorda's Goodies is baking — alfajores, crumb cake, and sticky toffee cupcakes, plus custom orders for events."
+    />
+    <link rel="icon" type="image/png" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bold.css" />
+    <link
+      rel="preload"
+      href="fonts/fraunces-900.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <noscript
+      ><style>
+        @media (max-width: 800px) {
+          .nav {
+            height: auto;
+            flex-wrap: wrap;
+            padding: 10px 0;
+          }
+          .nav-toggle {
+            display: none;
+          }
+          .nav-links {
+            position: static;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-height: none;
+            padding: 0;
+            box-shadow: none;
+            border: 0;
+            gap: 12px;
+          }
+          .nav-links li {
+            width: auto;
+          }
+          .nav-links a {
+            font-size: 12px;
+            padding: 8px;
+          }
+          .nav-links .btn {
+            margin: 0;
+          }
+        }
+      </style></noscript
+    >
+    <link
+      rel="preload"
+      href="fonts/manrope-variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      A little taste of Peru, handmade in Northern Virginia
+      <span>·</span> Please order 48 hours ahead
+    </div>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-brand" aria-label="Gorda’s Goodies home"
+          ><img
+            width="2551"
+            height="2693"
+            src="images/logo-crisp-320.png"
+            srcset="
+              images/logo-crisp-320.png   320w,
+              images/logo-crisp-640.png   640w,
+              images/logo-crisp-1280.png 1280w
+            "
+            sizes="110px"
+            alt="Gorda’s Goodies" /></a
+        ><button
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navigation">
+          <li><a href="menu.html" aria-current="page">Shop the goodies</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="events.html">Gifts & events</a></li>
+          <li><a href="gallery.html">The sweet life</a></li>
+          <li>
+            <a href="order.html" class="btn btn--primary"
+              >Let’s order <span aria-hidden="true">↗</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero hero--page">
+        <img
+          width="1200"
+          height="1490"
+          class="campaign-photo"
+          src="images/generated/alfajores-1-1200.webp"
+          srcset="
+            images/generated/alfajores-1-400.webp   400w,
+            images/generated/alfajores-1-700.webp   700w,
+            images/generated/alfajores-1-1200.webp 1200w,
+            images/generated/alfajores-1-1600.webp 1600w
+          "
+          sizes="(max-width: 700px) 90vw, (max-width: 1500px) 46vw, 680px"
+          alt="Styled Peruvian alfajores on a ceramic plate"
+          fetchpriority="high"
+        />
+        <div class="container hero-content">
+          <span class="eyebrow">Menu</span>
+          <h1>A little box.<br />A lot to love.</h1>
+          <p>
+            All treats are made fresh to order. Reach out by phone, email, or
+            Instagram to place an order or ask about availability.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="menu-note">
+            Custom platters and larger orders available — see
+            <a
+              href="events.html"
+              style="color: var(--red-darker); text-decoration: underline"
+              >Events &amp; Custom Orders</a
+            >
+            or reach out below for a quote.
+          </div>
+
+          <div class="menu-category menu-feature">
+            <img
+              class="campaign-photo"
+              width="1856"
+              height="2304"
+              src="images/generated/alfajores-2-1200.webp"
+              srcset="
+                images/generated/alfajores-2-400.webp   400w,
+                images/generated/alfajores-2-700.webp   700w,
+                images/generated/alfajores-2-1200.webp 1200w,
+                images/generated/alfajores-2-1600.webp 1600w
+              "
+              sizes="(max-width: 600px) 90vw, 45vw"
+              alt="Alfajores styled with coffee"
+              loading="lazy"
+              decoding="async"
+            />
+            <div>
+              <h2 id="alfajores">Our signature alfajores</h2>
+              <div class="menu-item">
+                <div>
+                  <div class="menu-item-name">Box of 6</div>
+                  <div class="menu-item-desc">
+                    Buttery shortbread sandwich cookies filled with real dulce
+                    de leche (manjar blanco). Available in Original,
+                    Chocolate-Dipped, and Anise, plus seasonal Pumpkin Spice.
+                  </div>
+                </div>
+                <div class="menu-item-price">$8.50</div>
+              </div>
+            </div>
+          </div>
+          <div class="flavor-pair" aria-label="Alfajor flavor highlights">
+            <a href="order.html" class="flavor-tile"
+              ><img
+                class="campaign-photo"
+                width="1856"
+                height="2304"
+                src="images/generated/assortment/cookies-2-1200.webp"
+                srcset="
+                  images/generated/assortment/cookies-2-400.webp   400w,
+                  images/generated/assortment/cookies-2-700.webp   700w,
+                  images/generated/assortment/cookies-2-1200.webp 1200w,
+                  images/generated/assortment/cookies-2-1600.webp 1600w
+                "
+                sizes="(max-width: 600px) 85vw, 30vw"
+                alt="Chocolate-topped alfajores, styled with coffee"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <span class="eyebrow">THE CHOCOLATE ONE</span>
+                <h3>A little extra indulgence.</h3>
+                <span class="text-link">Request chocolate-dipped ↗</span>
+              </div></a
+            >
+            <div class="flavor-note">
+              <span class="eyebrow">YOUR BOX, YOUR FAVORITE</span>
+              <h3>Original. Chocolate-dipped. Anise.</h3>
+              <p>
+                Pick a familiar favorite or try something new. Ask us about
+                seasonal Pumpkin Spice and current availability.
+              </p>
+              <a href="order.html" class="text-link"
+                >Let’s find your flavor ↗</a
+              >
+            </div>
+          </div>
+          <div class="menu-category">
+            <h2>Cakes &amp; cupcakes</h2>
+            <div class="menu-item">
+              <div>
+                <div class="menu-item-name">Crumb Cake</div>
+                <div class="menu-item-desc">
+                  Moist cake with a buttery crumb topping. Comes with 2 slices.
+                </div>
+              </div>
+              <div class="menu-item-price">$7 + tax</div>
+            </div>
+            <div class="menu-item">
+              <div>
+                <div class="menu-item-name">Sticky Toffee Cupcake</div>
+                <div class="menu-item-desc">A single rich toffee cupcake.</div>
+              </div>
+              <div class="menu-item-price">$8 + tax</div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="order.html" class="btn btn--primary">Order Now</a>
+            <p
+              style="
+                margin-top: 0.9rem;
+                color: var(--text-light);
+                font-size: 0.9rem;
+              "
+            >
+              Orders need 48 hours' advance notice. We currently accept Venmo
+              and Zelle for payment.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section--tinted">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">How To Order</span>
+            <h2>A little hello. A little sweetness.</h2>
+          </div>
+          <div class="grid-3">
+            <div class="card">
+              <div class="card-body">
+                <h3>1. Reach out</h3>
+                <p>
+                  Send us your order and pickup date by phone, email, or
+                  Instagram DM — at least 48 hours ahead.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>2. We confirm your total</h3>
+                <p>
+                  We'll text or email back to confirm availability, pickup time,
+                  and what you owe.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>3. Pay via Venmo or Zelle</h3>
+                <p>
+                  Your order is confirmed once payment is received.
+                  <a href="order.html"
+                    >See payment details on our order page.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container menu-order">
+        <a href="order.html" class="btn btn--primary">Request your order ↗</a>
+        <p>
+          Please allow at least 48 hours. Availability confirmed personally.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img
+                width="2551"
+                height="2693"
+                src="images/logo-crisp-320.png"
+                srcset="
+                  images/logo-crisp-320.png   320w,
+                  images/logo-crisp-640.png   640w,
+                  images/logo-crisp-1280.png 1280w
+                "
+                sizes="110px"
+                alt="Gorda’s Goodies"
+              />
+            </div>
+            <p>
+              A little Peru. A lot of love.<br />Handmade in Springfield,
+              Virginia.
+            </p>
+          </div>
+          <div>
+            <h4>Explore the goodies</h4>
+            <ul>
+              <li><a href="menu.html">Our menu</a></li>
+              <li><a href="events.html">Gifts & celebrations</a></li>
+              <li><a href="about.html">Meet Elsie</a></li>
+              <li><a href="gallery.html">Sweet inspiration</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Say hola</h4>
+            <ul>
+              <li>
+                <a href="mailto:gordasgoodies@gmail.com"
+                  >gordasgoodies@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+17035867359">703-586-7359</a></li>
+              <li>
+                <a
+                  href="https://instagram.com/gordasgoodiesllc"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram ↗</a
+                >
+              </li>
+              <li>Springfield & Northern Virginia</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Gorda’s Goodies LLC</span
+          ><span>Small batches. Big heart. ¡Qué rico!</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

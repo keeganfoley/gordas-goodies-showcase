@@ -1,0 +1,16 @@
+{
+  "name": "gordas-goodies-site",
+  "version": "1.0.0",
+  "description": "Gorda's Goodies \u2014 static site source and image build script",
+  "private": true,
+  "scripts": {
+    "build-images": "node build-images.js",
+    "build-generated-images": "node build-generated-images.js",
+    "build-logo": "node build-logo.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "description": "AI-generated packaging concepts. Only box-1 and box-3 used on website; actual packaging to be confirmed with business.",
+  "jobs": [
+    {
+      "index": 0,
+      "job_id": "23c16e94-e576-43bf-a983-a28ee1b317ee",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FgRORl773E4iXWSCp8jenwY7ET/hf_20260916_160327_23c16e94-e576-43bf-a983-a28ee1b317ee.png"
+    },
+    {
+      "index": 1,
+      "job_id": "ae177b59-a0ef-4a81-900d-fa166811bbde",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FgRORl773E4iXWSCp8jenwY7ET/hf_20260916_160539_ae177b59-a0ef-4a81-900d-fa166811bbde.png",
+      "note": "Refined alternate still deviates from original logo; not used on website."
+    },
+    {
+      "index": 2,
+      "job_id": "75a2c836-b836-4eb1-a784-bd473e4aab4d",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FgRORl773E4iXWSCp8jenwY7ET/hf_20260916_160328_75a2c836-b836-4eb1-a784-bd473e4aab4d.png"
+    }
+  ],
+  "requests": [
+    {
+      "index": 0,
+      "params": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "https://raw.githubusercontent.com/smh5929/gordas-goodies-site/main/images/logo-900.png"
+          },
+          {
+            "role": "image",
+            "value": "https://raw.githubusercontent.com/smh5929/gordas-goodies-site/main/images/three-sizes-closeup-1200.jpg"
+          },
+          {
+            "role": "image",
+            "value": "9b989120-b735-40ff-ba53-d1a24b51a659"
+          }
+        ],
+        "prompt": "[SCENE]\nThree-quarter portrait photograph of a closed warm-cream rectangular cookie gift box with the exact crimson logo centered and clearly visible on its top lid. A slim crimson cotton ribbon wraps near one edge, away from the logo, tied in a small natural bow. A tiny cream dessert plate with three reference alfajores sits in the foreground alongside it. Both the whole logo and the cookies are readable.\n[ENVIRONMENT DETAILS]\nIvory linen tabletop, a narrow crimson and cream woven Peruvian textile corner, light textured plaster background, subtle paperboard grain. Compose box centrally with breathing room so a website crop retains the complete lid logo.\n[LENS & CAMERA]\n50mm lens, f/7.1, elevated three-quarter angle looking down enough to see the entire top-face logo, both logo and cookies sharp.\n[PRODUCT PLACEMENT]\nUse reference 1 as the EXACT original logo artwork, unchanged: smiling hat-wearing braided character above the GORDA'S GOODIES wordmark, cookie-shaped OO, deep crimson ink. Print this complete logo prominently on the TOP FACE of the box lid, flat ink following the lid's real perspective. Preserve the lettering and illustration, do not invent or redesign a logo. The brand lettering must read exactly \"GORDA'S GOODIES\". Reference 2 controls the actual alfajores: small scalloped pale-golden shortbread sandwiches, caramel-brown dulce de leche, powdered sugar, handmade irregularities. Reference 3 controls the warm photographic styling, not cookie shape or branding.\n[HUMAN ELEMENT]\nNo people or hands. A gift ready to share.\n[LIGHTING]\nLarge soft window from camera-left at 45 degrees, 5000K daylight, gentle cream bounce, soft falloff and grounded contact shadows. Keep printed logo edges and sugar highlights clear.\n[ATMOSPHERE]\nIntimate thoughtful homemade bakery gift, premium but achievable packaging. Believable material texture, no luxury CGI sheen.\n[COLOR PALETTE]\nWarm cream paperboard, crimson #a31f1f ink and cotton ribbon, natural caramel cookies, ivory linen.\n[STYLE REFERENCE]\nWarm tactile food storytelling, natural appetizing editorial photography, honest paper textures and restrained retouching.\n[QUALITY MARKERS]\nTack-sharp commercial photography, editorial commercial standard, ultra-realistic textures and materials, professional retouching standard, no AI artifacts.\n[AVOID]\nno AI artifacts, no warped or smeared text, no fake words baked into the image, no plastic look, no waxy surface, no cartoonish rendering, no extra fingers, no extra limbs, no melted geometry, no doubled subjects, no oversaturated HDR, no HDR halos, no oversharpened look, no flat fluorescent lighting, no harsh on-camera flash, no generic stock photography poses, no cliché compositions, no random unrelated brand logos, no watermarks, no signatures, no AI sheen on hair or skin, no doll-like rendering, no airbrush look, no flat solid color bands, no empty rectangular areas, no dull gradient zones. No warped product label text, no garbled letters, no fake brand names, no melted typography, no doubled labels, no fictional logos. No stale stock photography aesthetic, no synthetic stock-photo look, no over-staged feeling, no unrealistically clean environments, no perfect symmetry where natural asymmetry should be, no clipart elements, no flat illustration mixed with photo, no obviously composited backgrounds. No ribbon covering the logo. No coconut cookies, macarons, floating food or dripping caramel.\nresolution: 2k"
+      }
+    },
+    {
+      "index": 1,
+      "params": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "https://raw.githubusercontent.com/smh5929/gordas-goodies-site/main/images/logo-900.png"
+          },
+          {
+            "role": "image",
+            "value": "https://raw.githubusercontent.com/smh5929/gordas-goodies-site/main/images/three-sizes-closeup-1200.jpg"
+          },
+          {
+            "role": "image",
+            "value": "9b989120-b735-40ff-ba53-d1a24b51a659"
+          }
+        ],
+        "prompt": "[SCENE]\nOpen cream rigid cookie box with six powdered reference alfajores nestled in white paper baking cups and ivory tissue. Its detached lid rests upright at a slight backward angle directly behind the base, exterior TOP FACE toward camera displaying the exact crimson logo prominently, not a new logo inside the box. The box and lid form one coherent gift presentation.\n[ENVIRONMENT DETAILS]\nCream linen surface, soft crimson ribbon loosely laid beside the box, subtle red-and-ivory Peruvian woven textile visible at frame edge. Natural handcrafted package, no extra printed marketing words.\n[LENS & CAMERA]\n50mm lens, f/8, three-quarter angle, sufficient depth of field to resolve the complete lid logo and front cookies, portrait composition.\n[PRODUCT PLACEMENT]\nUse reference 1 as the EXACT original logo artwork, unchanged: smiling hat-wearing braided character above the GORDA'S GOODIES wordmark, cookie-shaped OO, deep crimson ink. Print this complete logo prominently on the TOP FACE of the box lid, flat ink following the lid's real perspective. Preserve the lettering and illustration, do not invent or redesign a logo. The brand lettering must read exactly \"GORDA'S GOODIES\". Reference 2 controls the actual alfajores: small scalloped pale-golden shortbread sandwiches, caramel-brown dulce de leche, powdered sugar, handmade irregularities. Reference 3 controls the warm photographic styling, not cookie shape or branding.\n[HUMAN ELEMENT]\nNo people or hands. A gift ready to share.\n[LIGHTING]\nLarge soft window from camera-left at 45 degrees, 5000K daylight, gentle cream bounce, soft falloff and grounded contact shadows. Keep printed logo edges and sugar highlights clear.\n[ATMOSPHERE]\nIntimate thoughtful homemade bakery gift, premium but achievable packaging. Believable material texture, no luxury CGI sheen.\n[COLOR PALETTE]\nWarm cream paperboard, crimson #a31f1f ink and cotton ribbon, natural caramel cookies, ivory linen.\n[STYLE REFERENCE]\nWarm tactile food storytelling, natural appetizing editorial photography, honest paper textures and restrained retouching.\n[QUALITY MARKERS]\nTack-sharp commercial photography, editorial commercial standard, ultra-realistic textures and materials, professional retouching standard, no AI artifacts.\n[AVOID]\nno AI artifacts, no warped or smeared text, no fake words baked into the image, no plastic look, no waxy surface, no cartoonish rendering, no extra fingers, no extra limbs, no melted geometry, no doubled subjects, no oversaturated HDR, no HDR halos, no oversharpened look, no flat fluorescent lighting, no harsh on-camera flash, no generic stock photography poses, no cliché compositions, no random unrelated brand logos, no watermarks, no signatures, no AI sheen on hair or skin, no doll-like rendering, no airbrush look, no flat solid color bands, no empty rectangular areas, no dull gradient zones. No warped product label text, no garbled letters, no fake brand names, no melted typography, no doubled labels, no fictional logos. No stale stock photography aesthetic, no synthetic stock-photo look, no over-staged feeling, no unrealistically clean environments, no perfect symmetry where natural asymmetry should be, no clipart elements, no flat illustration mixed with photo, no obviously composited backgrounds. No ribbon covering the logo. No coconut cookies, macarons, floating food or dripping caramel.\nresolution: 2k"
+      }
+    },
+    {
+      "index": 2,
+      "params": {
+        "model": "nano_banana_pro",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "count": 1,
+        "medias": [
+          {
+            "role": "image",
+            "value": "https://raw.githubusercontent.com/smh5929/gordas-goodies-site/main/images/logo-900.png"
+          },
+          {
+            "role": "image",
+            "value": "https://raw.githubusercontent.com/smh5929/gordas-goodies-site/main/images/three-sizes-closeup-1200.jpg"
+          },
+          {
+            "role": "image",
+            "value": "9b989120-b735-40ff-ba53-d1a24b51a659"
+          }
+        ],
+        "prompt": "[SCENE]\nNear-overhead editorial portrait photograph of a cream gift box filled with six reference alfajores in individual white paper cups. A detached cream lid lies flat just above and partly beside the open box, with its exact crimson logo fully visible on top. A narrow crimson ribbon loosely curls around the outside without covering any artwork.\n[ENVIRONMENT DETAILS]\nWarm ivory linen, tiny shortbread crumbs near the open box, restrained crimson Peruvian woven cloth along the lower frame edge, matte paper texture. Realistic practical packaging, simple and thoughtful.\n[LENS & CAMERA]\n50mm lens, f/8, near top-down at 70 degrees, crisp cookies and crisp packaging logo, gentle directional shadows.\n[PRODUCT PLACEMENT]\nUse reference 1 as the EXACT original logo artwork, unchanged: smiling hat-wearing braided character above the GORDA'S GOODIES wordmark, cookie-shaped OO, deep crimson ink. Print this complete logo prominently on the TOP FACE of the box lid, flat ink following the lid's real perspective. Preserve the lettering and illustration, do not invent or redesign a logo. The brand lettering must read exactly \"GORDA'S GOODIES\". Reference 2 controls the actual alfajores: small scalloped pale-golden shortbread sandwiches, caramel-brown dulce de leche, powdered sugar, handmade irregularities. Reference 3 controls the warm photographic styling, not cookie shape or branding.\n[HUMAN ELEMENT]\nNo people or hands. A gift ready to share.\n[LIGHTING]\nLarge soft window from camera-left at 45 degrees, 5000K daylight, gentle cream bounce, soft falloff and grounded contact shadows. Keep printed logo edges and sugar highlights clear.\n[ATMOSPHERE]\nIntimate thoughtful homemade bakery gift, premium but achievable packaging. Believable material texture, no luxury CGI sheen.\n[COLOR PALETTE]\nWarm cream paperboard, crimson #a31f1f ink and cotton ribbon, natural caramel cookies, ivory linen.\n[STYLE REFERENCE]\nWarm tactile food storytelling, natural appetizing editorial photography, honest paper textures and restrained retouching.\n[QUALITY MARKERS]\nTack-sharp commercial photography, editorial commercial standard, ultra-realistic textures and materials, professional retouching standard, no AI artifacts.\n[AVOID]\nno AI artifacts, no warped or smeared text, no fake words baked into the image, no plastic look, no waxy surface, no cartoonish rendering, no extra fingers, no extra limbs, no melted geometry, no doubled subjects, no oversaturated HDR, no HDR halos, no oversharpened look, no flat fluorescent lighting, no harsh on-camera flash, no generic stock photography poses, no cliché compositions, no random unrelated brand logos, no watermarks, no signatures, no AI sheen on hair or skin, no doll-like rendering, no airbrush look, no flat solid color bands, no empty rectangular areas, no dull gradient zones. No warped product label text, no garbled letters, no fake brand names, no melted typography, no doubled labels, no fictional logos. No stale stock photography aesthetic, no synthetic stock-photo look, no over-staged feeling, no unrealistically clean environments, no perfect symmetry where natural asymmetry should be, no clipart elements, no flat illustration mixed with photo, no obviously composited backgrounds. No ribbon covering the logo. No coconut cookies, macarons, floating food or dripping caramel.\nresolution: 2k"
+      }
+    }
+  ]
+}

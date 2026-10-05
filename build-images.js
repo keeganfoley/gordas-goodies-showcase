@@ -29,11 +29,35 @@ const photos = {
   'Tray assortment of GG cookies.jpg': 'tray-assortment',
   'close-up batch with dulce de leche.jpg': 'closeup-batch-dulce',
   'new close-up pic of 3 size alfajor.jpg': 'three-sizes-closeup',
+  'Graduation Decals and Alfajores Tray.jpg': 'graduation-tray',
+  'Birthday Stack of Alfajores.jpg': 'birthday-candle-stack',
+  'Heart Shaped Alfajores with Strawberries.jpg': 'heart-alfajores-strawberries',
+  'Baby Shower Tower of Alfajores.jpg': 'baby-shower-tower',
+  'Mothers Day I Got It From My Mama.jpg': 'mothersday-mama-mug',
+  'Crumb Cake Vanilla Pecan Closeup.jpg': 'crumbcake-vanilla-pecan',
+  'Christmas Boxed Gifts with Candy Canes.jpg': 'christmas-boxed-gifts',
+  'Thank You For Celebrating Favor Box.jpg': 'celebrating-favor-box',
+  'GG Crumb Cake Frosted Square.jpg': 'crumbcake-frosted-square',
+  'Sticky Toffee Pudding Cropped.jpg': 'sticky-toffee-pudding',
+  'Baked Just For You Gift Box.jpg': 'baked-just-for-you-box',
+  'IMG_7857.jpg': 'dad-letter-cookies',
 };
+
+// Photos used as full-bleed page hero backgrounds need a wider size than the
+// default 1200 max, since CSS stretches them to 100vw and 1200px looks soft
+// on wider screens. Add slugs here when using a photo as a `.hero-img`.
+const HERO_SLUGS = new Set(['celebrating-favor-box', 'christmas-boxed-gifts']);
 
 async function processPhoto(srcFile, slug) {
   const input = path.join(SRC, srcFile);
   const buf = await sharp(input).rotate().toBuffer();
+
+  if (HERO_SLUGS.has(slug)) {
+    await sharp(buf).resize({ width: 2000, withoutEnlargement: true })
+      .jpeg({ quality: 80, mozjpeg: true }).toFile(path.join(OUT, `${slug}-2000.jpg`));
+    await sharp(buf).resize({ width: 2000, withoutEnlargement: true })
+      .webp({ quality: 78 }).toFile(path.join(OUT, `${slug}-2000.webp`));
+  }
 
   // Full-size (gallery lightbox / home features): max width 1200
   await sharp(buf).resize({ width: 1200, withoutEnlargement: true })
@@ -89,15 +113,20 @@ async function processLogo() {
   console.log('processed logo + favicons');
 }
 
-(async () => {
-  await processHero();
-  await processLogo();
-  for (const [file, slug] of Object.entries(photos)) {
-    if (!fs.existsSync(path.join(SRC, file))) {
-      console.warn('MISSING', file);
-      continue;
+// photo-guide/generate.js reads this map so the two never disagree.
+module.exports = { photos, HERO_SLUGS };
+
+if (require.main === module) {
+  (async () => {
+    await processHero();
+    await processLogo();
+    for (const [file, slug] of Object.entries(photos)) {
+      if (!fs.existsSync(path.join(SRC, file))) {
+        console.warn('MISSING', file);
+        continue;
+      }
+      await processPhoto(file, slug);
     }
-    await processPhoto(file, slug);
-  }
-  console.log('done');
-})();
+    console.log('done');
+  })();
+}

@@ -6,6 +6,8 @@ const path = require('path');
 
 const SRC = path.join(__dirname, 'assets');
 const OUT = path.join(__dirname, 'images');
+const enhanced = require('./assets/enhanced/manifest.json');
+const photoInput = file => path.join(SRC, enhanced[file] || file);
 if (!fs.existsSync(OUT)) fs.mkdirSync(OUT);
 
 // Gallery / product photos -> slug for output filenames
@@ -41,6 +43,7 @@ const photos = {
   'Sticky Toffee Pudding Cropped.jpg': 'sticky-toffee-pudding',
   'Baked Just For You Gift Box.jpg': 'baked-just-for-you-box',
   'IMG_7857.jpg': 'dad-letter-cookies',
+  'sticky date.jpg': 'sticky-date-dessert',
 };
 
 // Photos used as full-bleed page hero backgrounds need a wider size than the
@@ -49,7 +52,7 @@ const photos = {
 const HERO_SLUGS = new Set(['celebrating-favor-box', 'christmas-boxed-gifts']);
 
 async function processPhoto(srcFile, slug) {
-  const input = path.join(SRC, srcFile);
+  const input = photoInput(srcFile);
   const buf = await sharp(input).rotate().toBuffer();
 
   if (HERO_SLUGS.has(slug)) {
@@ -81,7 +84,7 @@ async function processPhoto(srcFile, slug) {
 }
 
 async function processHero() {
-  const input = path.join(SRC, 'Sun on Alfajores outside.jpg');
+  const input = photoInput('Sun on Alfajores outside.jpg');
   const buf = await sharp(input).rotate().toBuffer();
   const widths = [480, 800, 1200, 1600, 2000];
   for (const w of widths) {

@@ -49,3 +49,11 @@ lightbox are in `js/main.js`. Keep the header/footer consistent across all six p
 The live Netlify project is `gordasgoodies`, with custom domain
 `gordasgoodiesllc.com`. This content update is prepared on
 `approved-content-and-photos`; it has not been deployed to production.
+# Enhanced owner photography — October 2026
+
+`assets/enhanced/manifest.json` maps original filenames to reviewed Higgsfield
+enhancements. `npm run build-images` uses those sources to regenerate responsive
+JPEG/WebP files; the original assets and original header logo are retained.
+The stacked gift boxes deliberately use the original photo because generated
+versions altered small label text. The gallery includes the enhanced collection
+alongside the existing campaign images, with the duplicate filling photo omitted.

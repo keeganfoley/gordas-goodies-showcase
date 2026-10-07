@@ -1,5 +1,16 @@
 # Gorda's Goodies — Website Project Brief
 
+## Current showcase content (October 5, 2026)
+
+For current copy, prices, flavors, ordering, and pickup details, use the HTML
+and README.md in this checkout. They incorporate approved owner copy from
+`smh5929/gordas-goodies-site` at `3c436d4`. The historical brief below predates
+those updates. Current orders use the Google Form linked in every header and
+footer, Venmo/Zelle, and pickup only in Springfield. The photo guide now includes
+both owner originals and retained campaign imagery. Do not overwrite the
+storefront layout with the original site's full-width photo banners.
+
+
 This file is the working spec for the Gorda's Goodies website. It's meant to be
 read by Claude Code (drop this whole project folder into VS Code, `cd` into it,
 run `claude`) as persistent project context, and by Sam as the plan of record.

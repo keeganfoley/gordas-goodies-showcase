@@ -6,7 +6,8 @@
   "scripts": {
     "build-images": "node build-images.js",
     "build-generated-images": "node build-generated-images.js",
-    "build-logo": "node build-logo.js"
+    "build-logo": "node build-logo.js",
+    "photo-guide": "node photo-guide/generate.js"
   },
   "license": "ISC",
   "type": "commonjs",

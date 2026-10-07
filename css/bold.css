@@ -1902,6 +1902,27 @@ body {
   max-width: 1320px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+
+/* Reserve separate space for captions and touch controls on small screens. */
+@media (max-width: 800px), (max-height: 500px) {
+  .lightbox {
+    padding: 60px 16px 140px;
+  }
+  .lightbox img {
+    max-width: 100%;
+    max-height: calc(100dvh - 200px);
+  }
+  .lightbox-caption {
+    bottom: 76px;
+    left: 20px;
+    right: 20px;
+  }
+  .lightbox-nav {
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+}
 .owner-gallery a {
   aspect-ratio: auto;
   max-width: none;
